@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package btvn2;
+package phanSo;
 
-/**
- *
- * @author pcct
- */
 public class phanSo {
 
     private int T;
@@ -96,5 +87,8 @@ public class phanSo {
     public void rutGon(phanSo s1){
         int u = s1.UCLN(s1.T, s1.M);
         System.out.println("Phan so " + s1.T + "/" + s1.M + " rut gon: " + s1.T/u + "/" + s1.M/u);
+    }
+    public double chia(phanSo s1) {
+    	return s1.T*1.0/s1.M;
     }
 }
