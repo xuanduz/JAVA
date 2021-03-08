@@ -1,0 +1,14 @@
+
+public class Main_Class {
+
+	public static void main(String[] args) {
+		Point p1 = new Point(1,2);
+		Point p2 = new Point(10,20);
+		Point p3 = new Point(11,44);
+		
+		p1.toString();
+		p2.toString();
+		
+	}
+
+}

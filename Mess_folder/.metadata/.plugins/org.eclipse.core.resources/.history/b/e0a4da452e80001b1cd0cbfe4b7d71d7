@@ -1,0 +1,40 @@
+
+public class Rectangle implements Shape {
+
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double perimeter() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double distance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void move() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void rotate() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void zoom() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

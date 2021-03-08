@@ -1,0 +1,10 @@
+
+public interface Shape {
+	double area();
+	double perimeter();
+	double distance();
+	void move();
+	void rotate();
+	void zoom();
+	
+}

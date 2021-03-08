@@ -1,0 +1,69 @@
+
+public class Line implements Shape {
+	
+	Point a;
+	Point b;
+	
+	public Line(Point a, Point b) {
+		this.a = a;
+		this.b = b;
+	}
+
+	@Override
+	public String toString() {
+		return "Line [a=" + a + ", b=" + b + "]";
+	}
+
+	public Point getA() {
+		return a;
+	}
+
+	public void setA(Point a) {
+		this.a = a;
+	}
+
+	public Point getB() {
+		return b;
+	}
+
+	public void setB(Point b) {
+		this.b = b;
+	}
+
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double perimeter() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double distance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void move(double x, double y) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void rotate() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void zoom() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

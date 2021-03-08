@@ -1,0 +1,57 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main_Class {
+
+	public static void main(String[] args) {
+		// Set points
+		Point p1 = new Point(0,0);
+		Point p2 = new Point(2,0);
+		Point p3 = new Point(0,3);
+		Point p4 = new Point(2,3);
+		
+		// Set Circle
+		Circle c1 = new Circle(p1,3);
+		
+		//Set Triangle
+		Triangle t1 = new Triangle(p1, p2, p3);
+		
+		//Set Rectangle
+		Rectangle r1 = new Rectangle(p1, p2, p4, p3);
+		
+		//Set Line
+		Line l1 = new Line(p1, p2);
+		
+		
+		// Begin
+		
+		List<Shape> Points = new ArrayList<>();
+		Points.add(l1);
+		Points.add(c1);
+		Points.add(t1);
+		Points.add(r1);
+		
+		for (Shape shape : Points) {
+			System.out.println(shape.toString());
+		}
+		
+		double max_area = 0;
+		double max_perimeter = 0;
+		Shape temp = null;
+		for(int i=0; i<Points.size(); i++) {
+			if (max_area < (Points.get(i)).area()) {
+				max_area = (Points.get(i)).area();
+				temp = Points.get(i);
+			}
+		}
+		
+		System.out.println("max area = " + max_area + " la hinh " + temp.toString());
+		
+		System.out.println("perimeter of Rectangle = " + r1.perimeter());
+		System.out.println("Area of Triangle = " + t1.area());
+		System.out.println("perimeter of Triangle = " + t1.perimeter());
+		
+		
+	}
+
+}

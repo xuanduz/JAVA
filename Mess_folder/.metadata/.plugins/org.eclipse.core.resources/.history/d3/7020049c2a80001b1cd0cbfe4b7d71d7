@@ -1,0 +1,21 @@
+
+public class Main_Class {
+
+	public static void main(String[] args) {
+		Point p1 = new Point(0,0);
+		Point p2 = new Point(1,1);
+		Point p3 = new Point(3,3);
+		
+		Circle c1 = new Circle(p1,3);
+		Circle c2 = new Circle(p2,6);
+		
+		Triangle t1 = new Triangle(p1, p2, p3);
+		
+		System.out.println(t1.toString());
+		
+		System.out.println("Area of Triangle = " + t1.area());
+		
+		
+	}
+
+}

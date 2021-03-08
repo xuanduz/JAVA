@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+E:\Hoc_tap\JAVA\ProjectJava\.metadata\.plugins\org.eclipse.jdt.core
+2476249805.index
+1446078946.index
+1250915715.index
+3767226088.index
+1027865577.index
+2872044937.index

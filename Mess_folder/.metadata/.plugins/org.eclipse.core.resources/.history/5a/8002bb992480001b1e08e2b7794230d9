@@ -1,0 +1,65 @@
+public class Circle implements Shape{
+
+	private double x;
+	private double y;
+	
+	public Circle(double x, double y) {
+		this.x = x;
+		this.y = y;
+	}
+	
+	// Getter and Setter
+	
+	public double getX() {
+		return x;
+	}
+
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+	public void setY(double y) {
+		this.y = y;
+	}
+
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double perimeter() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double distance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void move() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void rotate() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void zoom() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

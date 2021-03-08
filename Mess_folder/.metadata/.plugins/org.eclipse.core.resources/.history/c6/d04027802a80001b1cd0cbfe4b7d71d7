@@ -1,0 +1,58 @@
+
+public class Triangle implements Shape{
+
+	Point a;
+	Point b;
+	Point c;
+	
+	public Triangle(Point a, Point b, Point c) {
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+	@Override
+	public String toString() {
+		return "Triangle [a=" + a + ", b=" + b + ", c=" + c + "]";
+	}
+	@Override
+//	public double area() {
+//		
+//		return 0.5*Math.abs((b.getX()-a.getX()) * (c.getY()-a.getX())
+//				- (c.getX()-a.getX()) * (b.getY()-a.getY()));
+//	}
+	public double area() {
+		
+		return c.getX();
+	}
+
+	@Override
+	public double perimeter() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double distance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void move() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void rotate() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void zoom() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
