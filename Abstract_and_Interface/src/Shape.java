@@ -10,6 +10,6 @@ public interface Shape {
 
 	void rotate(double alpha);
 
-	void zoom(double x);
+	void zoom(double z);
 
 }

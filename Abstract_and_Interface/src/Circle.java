@@ -63,9 +63,9 @@ public class Circle implements Shape {
 	}
 
 	@Override
-	public void zoom(double x) {
+	public void zoom(double z) {
 		// TODO Auto-generated method stub
-
+		this.r = r * z;
 	}
 
 }

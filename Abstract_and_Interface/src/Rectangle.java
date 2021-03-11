@@ -88,13 +88,56 @@ public class Rectangle implements Shape {
 	@Override
 	public void rotate(double alpha) {
 		// TODO Auto-generated method stub
-
+		alpha = alpha * Math.PI / 180;
+		double x;
+		double y;
+		x = ((1.0 / 4) * (a.getX() + b.getX() + c.getX() + d.getX()));
+		y = ((1.0 / 4) * (a.getY() + b.getY() + c.getY() + d.getY()));
+		Point i = new Point(x, y);
+		x = ((a.getX() - i.getX()) * Math.cos(alpha) - (a.getY() - i.getY()) * Math.sin(alpha) + i.getX());
+		y = ((a.getX() - i.getX()) * Math.sin(alpha) + (a.getY() - i.getY()) * Math.cos(alpha) + i.getY());
+		a.setX(x);
+		a.setY(y);
+		x = ((b.getX() - i.getX()) * Math.cos(alpha) - (b.getY() - i.getY()) * Math.sin(alpha) + i.getX());
+		y = ((b.getX() - i.getX()) * Math.sin(alpha) + (b.getY() - i.getY()) * Math.cos(alpha) + i.getY());
+		b.setX(x);
+		b.setY(y);
+		x = ((c.getX() - i.getX()) * Math.cos(alpha) - (c.getY() - i.getY()) * Math.sin(alpha) + i.getX());
+		y = ((c.getX() - i.getX()) * Math.sin(alpha) + (c.getY() - i.getY()) * Math.cos(alpha) + i.getY());
+		c.setX(x);
+		c.setY(y);
+		x = ((d.getX() - i.getX()) * Math.cos(alpha) - (d.getY() - i.getY()) * Math.sin(alpha) + i.getX());
+		y = ((d.getX() - i.getX()) * Math.sin(alpha) + (d.getY() - i.getY()) * Math.cos(alpha) + i.getY());
+		d.setX(x);
+		d.setY(y);
+		
 	}
 
 	@Override
-	public void zoom(double x) {
+	public void zoom(double z) {
 		// TODO Auto-generated method stub
-
+		double x;
+		double y;
+		x = ((1.0 / 4) * (a.getX() + b.getX() + c.getX() + d.getX()));
+		y = ((1.0 / 4) * (a.getY() + b.getY() + c.getY() + d.getY()));
+		Point i = new Point(x, y);
+		
+		x = (a.getX() - i.getX()) * z + i.getX();
+		y = (a.getY() - i.getY()) * z + i.getY();
+		a.setX(x);
+		a.setY(y);
+		x = (b.getX() - i.getX()) * z + i.getX();
+		y = (b.getY() - i.getY()) * z + i.getY();
+		b.setX(x);
+		b.setY(y);
+		x = (c.getX() - i.getX()) * z + i.getX();
+		y = (c.getY() - i.getY()) * z + i.getY();
+		c.setX(x);
+		c.setY(y);
+		x = (d.getX() - i.getX()) * z + i.getX();
+		y = (d.getY() - i.getY()) * z + i.getY();
+		d.setX(x);
+		d.setY(y);
 	}
 
 }

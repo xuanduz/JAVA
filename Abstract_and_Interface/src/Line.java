@@ -3,7 +3,7 @@ public class Line implements Shape {
 
 	Point a;
 	Point b;
-	private Point i;
+
 
 	public Line(Point a, Point b) {
 		this.a = a;
@@ -62,19 +62,22 @@ public class Line implements Shape {
 	@Override
 	public void rotate(double alpha) {
 //		// TODO Auto-generated method stub
-//		alpha = alpha * Math.PI / 180;
-//		double x;
-//		double y;
-//		x = (0.5 * (a.getX() + b.getX()));
-//		y = (0.5 * (a.getY() + b.getY()));
-//		// (a.getX() - i.getX())*Math.cos(alpha) - (a.getY() - i.getY())*Math.sin(alpha)
-//		// + i.getX()
-//		// (a.getX() - i.getX())*Math.sin(alpha) + (a.getY() - i.getY())*Math.cos(alpha)
-//		// + i.getY()
-//		a.setX((a.getX() - i.getX()) * Math.cos(alpha) - (a.getY() - i.getY()) * Math.sin(alpha) + x);
-//		a.setY((a.getX() - i.getX()) * Math.sin(alpha) + (a.getY() - i.getY()) * Math.cos(alpha) + y);
-//		b.setX((b.getX() - i.getX()) * Math.cos(alpha) - (b.getY() - i.getY()) * Math.sin(alpha) + x);
-//		b.setY((b.getX() - i.getX()) * Math.sin(alpha) + (b.getY() - i.getY()) * Math.cos(alpha) + y);
+		alpha = alpha * Math.PI / 180;
+		double x;
+		double y;
+		x = ((1.0 / 2) * (a.getX() + b.getX()));
+		y = ((1.0 / 2) * (a.getY() + b.getY()));
+		Point i = new Point(x, y);
+
+		x = ((a.getX() - i.getX()) * Math.cos(alpha) - (a.getY() - i.getY()) * Math.sin(alpha) + i.getX());
+		y = ((a.getX() - i.getX()) * Math.sin(alpha) + (a.getY() - i.getY()) * Math.cos(alpha) + i.getY());
+		a.setX(x);
+		a.setY(y);
+		x = ((b.getX() - i.getX()) * Math.cos(alpha) - (b.getY() - i.getY()) * Math.sin(alpha) + i.getX());
+		y = ((b.getX() - i.getX()) * Math.sin(alpha) + (b.getY() - i.getY()) * Math.cos(alpha) + i.getY());
+		b.setX(x);
+		b.setY(y);
+
 	}
 
 	@Override
